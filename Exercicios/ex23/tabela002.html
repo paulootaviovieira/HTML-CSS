@@ -11,6 +11,7 @@
       table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
       }
 
       td, th {
@@ -19,9 +20,30 @@
 
       }
 
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+      }
+
       thead, tfoot {
         background-color: gray;
         color: white;
+      }
+
+      thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: gray;
+      }
+
+      tbody > tr:nth-child(odd) { /* 2n-1 */
+        background-color: lightgreen;
+      }
+      
+      tbody > tr:nth-child(even) { /* 2n */
+        background-color: lightgray;
       }
 
       td.num {
@@ -45,8 +67,8 @@
         <caption>População das Unidades Federativas</caption>
          <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
 
          </thead>
@@ -214,12 +236,27 @@
 
          <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>203 062 512</strong></td> 
             </tr>
          </tfoot>
 
      </table>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita necessitatibus sed et reiciendis soluta velit consectetur assumenda illo. Assumenda atque dolorum temporibus voluptatem! Aut voluptatibus sed reiciendis at! Aspernatur, Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempora ipsam qui consequuntur unde dolores labore maiores atque, error cumque ea mollitia quae non obcaecati. Nesciunt neque fugiat cumque fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus hic qui assumenda quidem aperiam, quam id, beatae veniam recusandae officia nostrum odio praesentium maxime asperiores soluta magni suscipit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, sapiente quae. Enim ut reiciendis, dolores suscipit quos voluptates animi obcaecati nihil ipsa laborum necessitatibus recusandae, dolorem accusantium ullam aperiam vel?</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita necessitatibus sed et reiciendis soluta velit consectetur assumenda illo. Assumenda atque dolorum temporibus voluptatem! Aut voluptatibus sed reiciendis at! Aspernatur, Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempora ipsam qui consequuntur unde dolores labore maiores atque, error cumque ea mollitia quae non obcaecati. Nesciunt neque fugiat cumque fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus hic qui assumenda quidem aperiam, quam id, beatae veniam recusandae officia nostrum odio praesentium maxime asperiores soluta magni suscipit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, sapiente quae. Enim ut reiciendis, dolores suscipit quos voluptates animi obcaecati nihil ipsa laborum necessitatibus recusandae, dolorem accusantium ullam aperiam vel?</p>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita necessitatibus sed et reiciendis soluta velit consectetur assumenda illo. Assumenda atque dolorum temporibus voluptatem! Aut voluptatibus sed reiciendis at! Aspernatur, Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempora ipsam qui consequuntur unde dolores labore maiores atque, error cumque ea mollitia quae non obcaecati. Nesciunt neque fugiat cumque fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus hic qui assumenda quidem aperiam, quam id, beatae veniam recusandae officia nostrum odio praesentium maxime asperiores soluta magni suscipit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, sapiente quae. Enim ut reiciendis, dolores suscipit quos voluptates animi obcaecati nihil ipsa laborum necessitatibus recusandae, dolorem accusantium ullam aperiam vel?</p>
+
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita necessitatibus sed et reiciendis soluta velit consectetur assumenda illo. Assumenda atque dolorum temporibus voluptatem! Aut voluptatibus sed reiciendis at! Aspernatur, Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempora ipsam qui consequuntur unde dolores labore maiores atque, error cumque ea mollitia quae non obcaecati. Nesciunt neque fugiat cumque fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus hic qui assumenda quidem aperiam, quam id, beatae veniam recusandae officia nostrum odio praesentium maxime asperiores soluta magni suscipit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, sapiente quae. Enim ut reiciendis, dolores suscipit quos voluptates animi obcaecati nihil ipsa laborum necessitatibus recusandae, dolorem accusantium ullam aperiam vel?</p>
+
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita necessitatibus sed et reiciendis soluta velit consectetur assumenda illo. Assumenda atque dolorum temporibus voluptatem! Aut voluptatibus sed reiciendis at! Aspernatur, Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempora ipsam qui consequuntur unde dolores labore maiores atque, error cumque ea mollitia quae non obcaecati. Nesciunt neque fugiat cumque fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus hic qui assumenda quidem aperiam, quam id, beatae veniam recusandae officia nostrum odio praesentium maxime asperiores soluta magni suscipit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, sapiente quae. Enim ut reiciendis, dolores suscipit quos voluptates animi obcaecati nihil ipsa laborum necessitatibus recusandae, dolorem accusantium ullam aperiam vel?</p>
+
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita necessitatibus sed et reiciendis soluta velit consectetur assumenda illo. Assumenda atque dolorum temporibus voluptatem! Aut voluptatibus sed reiciendis at! Aspernatur, Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempora ipsam qui consequuntur unde dolores labore maiores atque, error cumque ea mollitia quae non obcaecati. Nesciunt neque fugiat cumque fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus hic qui assumenda quidem aperiam, quam id, beatae veniam recusandae officia nostrum odio praesentium maxime asperiores soluta magni suscipit ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, sapiente quae. Enim ut reiciendis, dolores suscipit quos voluptates animi obcaecati nihil ipsa laborum necessitatibus recusandae, dolorem accusantium ullam aperiam vel?</p>
+     
 
 </body>
 </html>
