@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+    <style>
+        fieldset {
+            border-radius: 7px;
+            /* width: fit-content; */
+            max-width: 600px;
+        }
+
+       .info {
+        padding-left: 40px;
+       }
+
+
+    </style>
+</head>
+<body>
+    <h1>Criador de contas para jogos</h1>
+    <h2>Os dados abaixo serão cadastrados automaticamente em qualquer jogo que voce escolher da lista</h2>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <fieldset>
+            <legend>Nome e Data</legend>
+                <p>
+                    <label for="inome">Nome Completo</label>
+                    <input type="text" name="nome" id="inome" required>
+
+                    <label for="idata" class="info">Data de Nascimento</label>
+                    <input type="date" name="data" id="idata" required max="2023-12-05">
+                </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sua conta do jogo</legend>
+
+            <p>
+                <label for="inick">Nick nos Jogos</label>
+                 <input type="text" name="nick" id="inick" required>
+
+                <label for="isenha" class="info">Senha</label> <label for=""><input type="password" name="senha" id="isenha"></label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Opções de jogos</legend>
+<input type="radio" name="jogo" id="ifree" required> <label for="ifree">Free Fire</label>
+<input type="radio" name="jogo" id="ifort" required> <label for="ifort">Fortnite</label>
+<input type="radio" name="jogo" id="igenshin" required> <label for="igenshin">Genshin Impact</label>
+<input type="radio" name="jogo" id="ilol" required> <label for="ilol">League of Legends</label>
+
+        </fieldset>
+       <p><input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+      </p>
+
+       
+    </form>
+</body>
+</html>

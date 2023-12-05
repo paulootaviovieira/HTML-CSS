@@ -1,2 +1,1 @@
-Os dados foram enviados!
-Aprenda PHP para saber oque fazer com eles.
+Seus dados foram salvos com sucesso em League of legends agora so entrar e se divertir
