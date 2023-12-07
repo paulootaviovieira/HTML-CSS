@@ -11,9 +11,9 @@
 
 <p>
     <label for="iest">Estado</label>
-    <select name="est" id="iest">
+    <select name="est" id="iest" required>
 
-        <option value="selected">--Escolha--</option>
+        <option selected disabled value="">--Escolha--</option>
         <optgroup label="Região Sudeste">
             <option value="RJ">Rio de Janeiro</option>
             <option value="MG">Minas Gerais</option>
@@ -31,7 +31,7 @@
 
 <p>
     <label for="iprof">Profissão</label>
-    <input type="text" name="prof" id="iprof" list="lstprof">
+    <input type="text" name="prof" id="iprof" list="lstprof" required>
     <datalist id="lstprof">
         <option value="ADM">Administrador</option>
         <option value="CONT">Contabilista</option>
