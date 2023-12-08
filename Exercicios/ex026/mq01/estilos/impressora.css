@@ -18,7 +18,7 @@ menu {
 }
 
 article::after {
-    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+    content: 'Esse artigo foi impresso através do site github.com/paulootaviovieira';
 }
 
 article {
